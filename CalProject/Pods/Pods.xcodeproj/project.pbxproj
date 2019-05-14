@@ -1,0 +1,1088 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0593BA5BFF92656C157C027E28B0DCDF /* VACalendarMonthDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C07DEE8EF9DC18C5BB766B7A7F7ED3B /* VACalendarMonthDelegate.swift */; };
+		0B4A14FF9E9AE6E53F32A84A8E131953 /* VACalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE58F994463CC4F168BA8E186BD5ABF8 /* VACalendar.swift */; };
+		0DE5A1CE8D43508B18CD6BB7B4523563 /* CKCalendarView+CustomCells.m in Sources */ = {isa = PBXBuildFile; fileRef = A941A15756044F88D5CDBE779C87DE32 /* CKCalendarView+CustomCells.m */; };
+		0E2F5DF81E016AD4F16B84D937FAEE4B /* CKCalendarCellColors.h in Headers */ = {isa = PBXBuildFile; fileRef = F540A6909973C4297F98F6F0E36F4C55 /* CKCalendarCellColors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E313ABE5D46BFD50098C9B86717046B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB6193BDF9256B1B2DC71E7CF8BFFB3D /* QuartzCore.framework */; };
+		0EEB2E61E5C8873A5240171FDD6064B0 /* CKCalendarGridTransitionDirection.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F7BD1DD9FDB6ECAA446F6AF4A55E10 /* CKCalendarGridTransitionDirection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F60518136C53E1B190150D6BED28E76 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0F1732A2D4DBA41714F9E205837D34 /* Foundation.framework */; };
+		129DF69F32FF8ED85CAB8C88B297F035 /* CKCalendarHeaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D8657B6D2E89FA4223F41B8EE120F38 /* CKCalendarHeaderView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		12E53B58716CFF2F38E39BF96FD71910 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0F1732A2D4DBA41714F9E205837D34 /* Foundation.framework */; };
+		13E661585BC66F0ACF970CDCE82DC353 /* CKCalendarView+DefaultCellProviderImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF69EA2E9D60472F47B90D4936612D8 /* CKCalendarView+DefaultCellProviderImplementation.m */; };
+		1AD3EA2AE21382CBEC993202FBE7C259 /* VADay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2373F5FED1D025AFD7CBAA9DA515373E /* VADay.swift */; };
+		1EDC4F6FD03C3876FE8A0C14CF6BDC01 /* NSCalendar+DateManipulation.h in Headers */ = {isa = PBXBuildFile; fileRef = A98CED97B9474C1C35715E24602A1EA3 /* NSCalendar+DateManipulation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20C620FC5B4DF3026F53E138B011AAD1 /* CKCalendarHeaderViewDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = DAB93B76C613683A35EFE783A983FFEB /* CKCalendarHeaderViewDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		21F559B0BA2B5CA1EEB98FF5539D0865 /* NSDateComponents+AllComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A517ED53F114ECA0F2FE8F05BE81E01 /* NSDateComponents+AllComponents.m */; };
+		2275FDBC901C83D0B8A4072940D9A90D /* CKCalendarModel+HeaderViewSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 32C47E0226F21AB27F82B607A27FBAF5 /* CKCalendarModel+HeaderViewSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2520B6E2956DE515D80BEDE3C6AED720 /* VAMonth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D647068272D4FEC258AD09671FBCD1 /* VAMonth.swift */; };
+		2540C346CD514812FADE8180503BA914 /* VACalendar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0318793CD6D25DB956FAF4D1E218F3B1 /* VACalendar-dummy.m */; };
+		27134139D1FC00339CAB7947CAAEB3BC /* VAFormatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FEE67329960033B0CB5A837C64546A /* VAFormatters.swift */; };
+		2B109EAF908DE8F4345F2E52F26418F7 /* CKTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE98481E4295F53F3A72CBE71D4614AE /* CKTableViewCell.m */; };
+		2F875FA4C49B3C1E649ACE433D8273EF /* CKCalendarViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B70D5C7AE9AF8490556CFCE82528D38 /* CKCalendarViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30A786B0D648B3426B452044E312DB0E /* CKCalendarModel+GridViewAnimationSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = CDB075C27369A289E52059DC13349FEA /* CKCalendarModel+GridViewAnimationSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3573849B1B17F75679397E29BC425E93 /* CKCalendarGridTransitionCollectionViewFlowLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BEBE96B4AC08B08AA5C6CBBC5F199A4 /* CKCalendarGridTransitionCollectionViewFlowLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37CBB699FED179B3E6B2188842E8495E /* Pods-CalProject-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C229FA68AA6F5C8520AD539C6B828540 /* Pods-CalProject-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		382B285642A2BAC65F2B3B97DD7FBB9B /* CKCalendarModel+HeaderViewSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 889F5E1EBCF76A839B7E78CEBCAFB9AA /* CKCalendarModel+HeaderViewSupport.m */; };
+		3916A86BB1DD040F1682B475F2343D93 /* MBPolygonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 98840646476A37C620D79D1983CB20B6 /* MBPolygonView.m */; };
+		398AEF42B91ABF4E6131639BA8051E73 /* VAMonthHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CA7EA65F48D748BC83ABCCC46F338C /* VAMonthHeaderView.swift */; };
+		3A99924EE3D7138BFE7826140316C071 /* CKCalendarModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EE1F54C5F543664CB3084282067AACA /* CKCalendarModel.m */; };
+		3B547BDC19D66BC05BD327184B80289B /* CKCalendarModel+GridViewSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = AB1A2DA9FE93CA65F49BBD901ABC17CD /* CKCalendarModel+GridViewSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F32BB54AA75895EB77BB583AA47D958 /* CKCalendarView+CustomCells.h in Headers */ = {isa = PBXBuildFile; fileRef = 976DC34F4726B4BDD0B88455C63E97C1 /* CKCalendarView+CustomCells.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		437D3E04FE6561E427D1ED0E41E3A8DA /* MBCalendarKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E4956C5AD4A70A448986D00F11FD793 /* MBCalendarKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43BC5998D201C0881F995FC9E017C8F5 /* CKCalendarHeaderViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = FC5627D2768676CA83CA3674EB3DBD74 /* CKCalendarHeaderViewDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		453E13F8B6AE0317EFE07ABF3525D8EE /* CKCustomCellProviding.h in Headers */ = {isa = PBXBuildFile; fileRef = 97002E73A63637C1ACE588C22A5DA144 /* CKCustomCellProviding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4858F03CED4417672ACA51C44925762F /* CKCalendarCell.h in Headers */ = {isa = PBXBuildFile; fileRef = B2879D0C7FC1B68B611411A4B2395DF8 /* CKCalendarCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590A1D330CCA6225FD4F7AD68716E495 /* CKCalendarModelObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C34EF93993AE43BDC3852AA982893DA /* CKCalendarModelObserver.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5ADFAC8DA1992D3F8EB3422E357E8554 /* VAWeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA3B44E05B7FDA2A78D81EC09960F09 /* VAWeekView.swift */; };
+		5E9BBEBB0DA785919929096C08EFA2AD /* CKCalendarView+DefaultCellProviderImplementation.h in Headers */ = {isa = PBXBuildFile; fileRef = E58285344651297E9A696918DDAE552A /* CKCalendarView+DefaultCellProviderImplementation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		604425BD95E1C75DFA6A41A9A8AF09F6 /* NSCalendarCategories.h in Headers */ = {isa = PBXBuildFile; fileRef = E433B3A522B3A157C0767D6F34BB771A /* NSCalendarCategories.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		626A3132DD6A8EAA457953AA2CFF9DC2 /* CKCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4205E8E52936C75107B554F986F55AE /* CKCalendarViewController.m */; };
+		63F466DF4BB1B52C4034F3EE7B113C72 /* CKCalendarCellContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D7D788FB301AD88318EA8710E14AC27 /* CKCalendarCellContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		66E7297F7CA23540741D5F784C88664B /* CKCalendarDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DCA1C22F8ADBFC6A7B0058060379C25 /* CKCalendarDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		672D6764918F2CF4730218525DE4303E /* CKCalendarGridViewDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EDA45CDD03BDC0785A10DF309F0AD51 /* CKCalendarGridViewDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		67F82771A7DF7DFC02F23FDC12740C0C /* VACalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC264D57169F5A968E88F94997118F81 /* VACalendarView.swift */; };
+		6D744E4889A0702A51334BC7A5AFF39A /* CKCalendarCellContext.m in Sources */ = {isa = PBXBuildFile; fileRef = A32D7601E3718DEE1217F9A67B8F7289 /* CKCalendarCellContext.m */; };
+		6E25C9ADC270BAF5A30755ADF7CEFE4A /* NSCalendar+Ranges.h in Headers */ = {isa = PBXBuildFile; fileRef = C5C90881D134A85F9D5B293D56740E6D /* NSCalendar+Ranges.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6EDDB7116CB5F9A1EA5579F196051E4B /* VAMonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F74D499781516BC4284F821924079F0 /* VAMonthView.swift */; };
+		7040A87B5B00771F6F353406101C9315 /* CKCalendarView.h in Headers */ = {isa = PBXBuildFile; fileRef = 95FD00D6DD3AE4CCA666901AACAF6B97 /* CKCalendarView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		720297E9CBC3766DE8294609AF32667B /* CKCalendarGridTransitionCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 77794E2B7EC5BD512743C4DC8D25F201 /* CKCalendarGridTransitionCollectionViewFlowLayout.m */; };
+		79B681C83B44BBA570FBF2D6D1847348 /* VADotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F68B77897715F9509099872C6DDA07 /* VADotView.swift */; };
+		79FBFDA06E17C34B3E3D374E8E9861A8 /* CKCalendarHeaderColors.h in Headers */ = {isa = PBXBuildFile; fileRef = 90924795E16DAD332FBE60A87B099E90 /* CKCalendarHeaderColors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7BEE998F52ADF06E5E5F5B3677186AD8 /* VAWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18145027E2D086E4ACC8A2770800E348 /* VAWeek.swift */; };
+		7C37F11F2B86AB107F8ADC326931EB2F /* MBCalendarKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 415DF3430132BCDB0AC8C716DEDE0737 /* MBCalendarKit-dummy.m */; };
+		7F2F9C7DA208499C95CD3974B214BDA5 /* NSDateComponents+AllComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = 2145D1C24C82D4D48C63633F864306D7 /* NSDateComponents+AllComponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7FC5A6BED569774D3D7DACBA4826B61F /* NSCalendar+Juncture.h in Headers */ = {isa = PBXBuildFile; fileRef = 382DD99C6C8308610F935541BCF8D56D /* NSCalendar+Juncture.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8413994D27C1334EB5046B4BE695C275 /* CKCalendarModel+GridViewAnimationSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CAA22915C686DD184239370FF25C3F5 /* CKCalendarModel+GridViewAnimationSupport.m */; };
+		8949A44D013B028D02CD0DA2B6016FB9 /* VACalendar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ADECFFD456ECB80FA1866484C65674F9 /* VACalendar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A20AE6649AC4F41A19053C710823DEE /* NSCalendar+DateManipulation.m in Sources */ = {isa = PBXBuildFile; fileRef = DE99736E89438CBBF92542146A0DE291 /* NSCalendar+DateManipulation.m */; };
+		8C0749B6264A87266164B596430B5B4F /* CKTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 557B5889F1B03DED7163649E6F140BA6 /* CKTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8FAA9D29C1C601A7C9457D93B3D38094 /* CKCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 4187E899F4E8D08DA10DB100152276D3 /* CKCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8FB7B64AAE45357DF08C225C7464D87E /* CKCalendarDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = B209B452979AC97946B74F66DE355659 /* CKCalendarDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		90BE3633DAEB0040ED40DD21B6FD8A3D /* CKCalendarModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BDD1DB3C77C5181260ABFA94EA24E70 /* CKCalendarModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93A707E29F1DB74AD636CF7A18F9FC8D /* CKCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 1008031B2A2624CBD8F83D67F9D360B0 /* CKCache.m */; };
+		985642ACDB36852768A541A74000BF25 /* CKCalendarGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF89584FF4F7CF78A7CE56B12CDA3E1D /* CKCalendarGridView.m */; };
+		99FE3DE82154FE3D71376EB4E002BA75 /* CKCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45187AE171EF76776BB29A08FA72BEEF /* CKCalendarView.m */; };
+		9E54470D7E1E934C0034B07312E235F3 /* CKCalendarModel+GridViewSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 895D31EABBD62AFEABF1B851F579A1F9 /* CKCalendarModel+GridViewSupport.m */; };
+		A8B8100BAC0B2051565261557562C311 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0F1732A2D4DBA41714F9E205837D34 /* Foundation.framework */; };
+		A8E0B15BF29ADA01B78E9D710DAAAF29 /* CKCalendarGridView.h in Headers */ = {isa = PBXBuildFile; fileRef = BC3C999E1B2EABF6E0E80F2ED21EE549 /* CKCalendarGridView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AEDE40C7F225BFEF84F96B2EBF1C9AE7 /* NSDate+Components.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4AB5B9B707844646A232C6D64B6C8A /* NSDate+Components.m */; };
+		B03A8353034AD183FB9B086917969241 /* Pods-CalProject-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 523D49810AD353F0E758250FCEF62400 /* Pods-CalProject-dummy.m */; };
+		B04F8A9F18CE81353868069A635EF119 /* CKCalendarViewDisplayMode.h in Headers */ = {isa = PBXBuildFile; fileRef = 317EF2C1AEAF78D180259454167BE936 /* CKCalendarViewDisplayMode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B95410EF67E62581FC0DDF23ED23F07D /* CKCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D147DE31F74106DE684145C891D3F1D /* CKCalendarCell.m */; };
+		BD7B525A415D69770BC7507F54F484D6 /* NSCalendar+Juncture.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DDEAAF445A53ABC22437356D9AF7707 /* NSCalendar+Juncture.m */; };
+		C072FE392D597E7BD912CBD6A8C8DA24 /* NSCalendar+Components.h in Headers */ = {isa = PBXBuildFile; fileRef = 113D0593D3FB35A2CDE6C8C87DC47B15 /* NSCalendar+Components.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3775B6BC2756D1678C1E485F835C660 /* CKCalendarEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B5EFC2C4AE20B0EEA0637D001B49559 /* CKCalendarEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D38C6E9A27543A3F332405323BB0EB6E /* NSCalendar+Ranges.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B3C70F52CC693B0EAE52155F6B9F3D /* NSCalendar+Ranges.m */; };
+		D67EA98377606650A3AA236B0C21B700 /* NSDate+Description.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E83F5002EBBE26C55B5FB51D3CFBDE7 /* NSDate+Description.m */; };
+		DA47ECFBEAE3FDF908C9951E459911ED /* VAWeekDaysView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6C45D5514874D6C5A351C59E527A0A /* VAWeekDaysView.swift */; };
+		E2A956B19E12709C28688D2C8AD02015 /* CKCalendarCellContextIdentifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 04EBDFC00560D7465718D62E067CCEA8 /* CKCalendarCellContextIdentifier.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E465ADBEC52E3B3508BA5F9B4B2D646A /* NSDate+Components.h in Headers */ = {isa = PBXBuildFile; fileRef = BA8285BF59D5CB672103419B80E90F4B /* NSDate+Components.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E57FC41855083D19794EABF2336672D3 /* NSCalendar+Components.m in Sources */ = {isa = PBXBuildFile; fileRef = B431391E2FCAE573E115F74A0B4D059A /* NSCalendar+Components.m */; };
+		E8C72B863174C0018C4158D9A0240358 /* CKCalendarGridViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = EAB9C88DBEEED61BA897C0947D7FB1E9 /* CKCalendarGridViewDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED277332B143A5DCF7222A57DF990B0F /* VADayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29A506893D17CB404173EDEE23E54DD /* VADayView.swift */; };
+		F3758189BDB96F03A2AFF5E50BEB5379 /* MBPolygonView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B0DA6FF407945BEF363E281D07AF85C /* MBPolygonView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F3FA64EAD5781A35865C3EE7CCAF0D15 /* CKCalendarEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 838206C3D92B7ADB171F193354023B57 /* CKCalendarEvent.m */; };
+		F68B6A7DDB5E06D961064AF87D394095 /* CKCalendarHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 925198F16946B2AF406A62E77B641ABD /* CKCalendarHeaderView.m */; };
+		FA2DF2AAA67797E9CE12420DFD19AFB5 /* NSDate+Description.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FD79108E0755EC3C65162DC3A929C50 /* NSDate+Description.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBB745786338EFF9860DFAF48E577896 /* CKCalendarGridTransitionAxis.h in Headers */ = {isa = PBXBuildFile; fileRef = BC2BC67621B31CB7C46C9E9F345B15F8 /* CKCalendarGridTransitionAxis.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		735049F6AB7F781CBDA98056EA9FDE82 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2BCDE1AA5ED78F510AFAC36E56C000F;
+			remoteInfo = MBCalendarKit;
+		};
+		F44368D7B719987DCA56852BBAC1FADC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4765BD1456D3671888B43664CA753F7;
+			remoteInfo = VACalendar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0318793CD6D25DB956FAF4D1E218F3B1 /* VACalendar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VACalendar-dummy.m"; sourceTree = "<group>"; };
+		04EBDFC00560D7465718D62E067CCEA8 /* CKCalendarCellContextIdentifier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKCalendarCellContextIdentifier.h; path = MBCalendarKit/CalendarKit/Headers/CKCalendarCellContextIdentifier.h; sourceTree = "<group>"; };
+		0C34EF93993AE43BDC3852AA982893DA /* CKCalendarModelObserver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKCalendarModelObserver.h; path = MBCalendarKit/CalendarKit/Core/CKCalendarModelObserver.h; sourceTree = "<group>"; };
+		1008031B2A2624CBD8F83D67F9D360B0 /* CKCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CKCache.m; path = MBCalendarKit/CalendarKit/Core/Caches/CKCache.m; sourceTree = "<group>"; };
+		113D0593D3FB35A2CDE6C8C87DC47B15 /* NSCalendar+Components.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSCalendar+Components.h"; path = "MBCalendarKit/CalendarKit/Categories/Foundation/NSCalendar/NSCalendar+Components.h"; sourceTree = "<group>"; };
+		18145027E2D086E4ACC8A2770800E348 /* VAWeek.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VAWeek.swift; path = VACalendar/VAWeek.swift; sourceTree = "<group>"; };
+		1A07ABCD23FF889E33D2EC2CE0FA6D34 /* Pods-CalProject-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CalProject-frameworks.sh"; sourceTree = "<group>"; };
+		1B70D5C7AE9AF8490556CFCE82528D38 /* CKCalendarViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKCalendarViewController.h; path = "MBCalendarKit/CalendarKit/View Controllers/CKCalendarViewController.h"; sourceTree = "<group>"; };
+		1EDA45CDD03BDC0785A10DF309F0AD51 /* CKCalendarGridViewDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKCalendarGridViewDataSource.h; path = MBCalendarKit/CalendarKit/Core/CKCalendarGridViewDataSource.h; sourceTree = "<group>"; };
+		2145D1C24C82D4D48C63633F864306D7 /* NSDateComponents+AllComponents.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDateComponents+AllComponents.h"; path = "MBCalendarKit/CalendarKit/Categories/Foundation/NSDateComponents+AllComponents.h"; sourceTree = "<group>"; };
+		2373F5FED1D025AFD7CBAA9DA515373E /* VADay.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VADay.swift; path = VACalendar/VADay.swift; sourceTree = "<group>"; };
+		27FEE67329960033B0CB5A837C64546A /* VAFormatters.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VAFormatters.swift; path = VACalendar/VAFormatters.swift; sourceTree = "<group>"; };
+		2D147DE31F74106DE684145C891D3F1D /* CKCalendarCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CKCalendarCell.m; path = MBCalendarKit/CalendarKit/Core/CKCalendarCell.m; sourceTree = "<group>"; };
+		2DF7B40D103B49E09BA63B67025F66D7 /* Pods-CalProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CalProject.release.xcconfig"; sourceTree = "<group>"; };
+		2E4956C5AD4A70A448986D00F11FD793 /* MBCalendarKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBCalendarKit-umbrella.h"; sourceTree = "<group>"; };
+		2FF69EA2E9D60472F47B90D4936612D8 /* CKCalendarView+DefaultCellProviderImplementation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CKCalendarView+DefaultCellProviderImplementation.m"; path = "MBCalendarKit/CalendarKit/Core/CKCalendarView+DefaultCellProviderImplementation.m"; sourceTree = "<group>"; };
+		317EF2C1AEAF78D180259454167BE936 /* CKCalendarViewDisplayMode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKCalendarViewDisplayMode.h; path = MBCalendarKit/CalendarKit/Headers/CKCalendarViewDisplayMode.h; sourceTree = "<group>"; };
+		32C47E0226F21AB27F82B607A27FBAF5 /* CKCalendarModel+HeaderViewSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CKCalendarModel+HeaderViewSupport.h"; path = "MBCalendarKit/CalendarKit/Core/CKCalendarModel+HeaderViewSupport.h"; sourceTree = "<group>"; };
+		382DD99C6C8308610F935541BCF8D56D /* NSCalendar+Juncture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSCalendar+Juncture.h"; path = "MBCalendarKit/CalendarKit/Categories/Foundation/NSCalendar/NSCalendar+Juncture.h"; sourceTree = "<group>"; };
+		3B5EFC2C4AE20B0EEA0637D001B49559 /* CKCalendarEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKCalendarEvent.h; path = MBCalendarKit/CalendarKit/Core/CKCalendarEvent.h; sourceTree = "<group>"; };
+		3D4AB5B9B707844646A232C6D64B6C8A /* NSDate+Components.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+Components.m"; path = "MBCalendarKit/CalendarKit/Categories/Foundation/NSDate/NSDate+Components.m"; sourceTree = "<group>"; };
+		3DCA1C22F8ADBFC6A7B0058060379C25 /* CKCalendarDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKCalendarDataSource.h; path = MBCalendarKit/CalendarKit/Headers/CKCalendarDataSource.h; sourceTree = "<group>"; };
+		3FEC4FF6199B5A2AD0413148EC31FB59 /* VACalendar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "VACalendar-Info.plist"; sourceTree = "<group>"; };
+		415DF3430132BCDB0AC8C716DEDE0737 /* MBCalendarKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBCalendarKit-dummy.m"; sourceTree = "<group>"; };
+		4187E899F4E8D08DA10DB100152276D3 /* CKCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKCache.h; path = MBCalendarKit/CalendarKit/Core/Caches/CKCache.h; sourceTree = "<group>"; };
+		45187AE171EF76776BB29A08FA72BEEF /* CKCalendarView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CKCalendarView.m; path = MBCalendarKit/CalendarKit/Core/CKCalendarView.m; sourceTree = "<group>"; };
+		4A517ED53F114ECA0F2FE8F05BE81E01 /* NSDateComponents+AllComponents.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDateComponents+AllComponents.m"; path = "MBCalendarKit/CalendarKit/Categories/Foundation/NSDateComponents+AllComponents.m"; sourceTree = "<group>"; };
+		4A83E40629DF5080955B9A84ECE39BC4 /* Pods-CalProject-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CalProject-acknowledgements.plist"; sourceTree = "<group>"; };
+		4C07DEE8EF9DC18C5BB766B7A7F7ED3B /* VACalendarMonthDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VACalendarMonthDelegate.swift; path = VACalendar/VACalendarMonthDelegate.swift; sourceTree = "<group>"; };
+		4C7D121D7C84E75540F5819D5E30E056 /* MBCalendarKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MBCalendarKit.framework; path = MBCalendarKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		523D49810AD353F0E758250FCEF62400 /* Pods-CalProject-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CalProject-dummy.m"; sourceTree = "<group>"; };
+		54B3C70F52CC693B0EAE52155F6B9F3D /* NSCalendar+Ranges.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSCalendar+Ranges.m"; path = "MBCalendarKit/CalendarKit/Categories/Foundation/NSCalendar/NSCalendar+Ranges.m"; sourceTree = "<group>"; };
+		557B5889F1B03DED7163649E6F140BA6 /* CKTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKTableViewCell.h; path = MBCalendarKit/CalendarKit/Core/CKTableViewCell.h; sourceTree = "<group>"; };
+		5B0DA6FF407945BEF363E281D07AF85C /* MBPolygonView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MBPolygonView.h; path = MBCalendarKit/CalendarKit/Core/MBPolygonView.h; sourceTree = "<group>"; };
+		5BEBE96B4AC08B08AA5C6CBBC5F199A4 /* CKCalendarGridTransitionCollectionViewFlowLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKCalendarGridTransitionCollectionViewFlowLayout.h; path = MBCalendarKit/CalendarKit/Core/CKCalendarGridTransitionCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		5D8657B6D2E89FA4223F41B8EE120F38 /* CKCalendarHeaderView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKCalendarHeaderView.h; path = MBCalendarKit/CalendarKit/Core/CKCalendarHeaderView.h; sourceTree = "<group>"; };
+		5DDEAAF445A53ABC22437356D9AF7707 /* NSCalendar+Juncture.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSCalendar+Juncture.m"; path = "MBCalendarKit/CalendarKit/Categories/Foundation/NSCalendar/NSCalendar+Juncture.m"; sourceTree = "<group>"; };
+		5EE1F54C5F543664CB3084282067AACA /* CKCalendarModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CKCalendarModel.m; path = MBCalendarKit/CalendarKit/Core/CKCalendarModel.m; sourceTree = "<group>"; };
+		5FD79108E0755EC3C65162DC3A929C50 /* NSDate+Description.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+Description.h"; path = "MBCalendarKit/CalendarKit/Categories/Foundation/NSDate/NSDate+Description.h"; sourceTree = "<group>"; };
+		6C6C45D5514874D6C5A351C59E527A0A /* VAWeekDaysView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VAWeekDaysView.swift; path = VACalendar/VAWeekDaysView.swift; sourceTree = "<group>"; };
+		6CAA22915C686DD184239370FF25C3F5 /* CKCalendarModel+GridViewAnimationSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CKCalendarModel+GridViewAnimationSupport.m"; path = "MBCalendarKit/CalendarKit/Core/CKCalendarModel+GridViewAnimationSupport.m"; sourceTree = "<group>"; };
+		77794E2B7EC5BD512743C4DC8D25F201 /* CKCalendarGridTransitionCollectionViewFlowLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CKCalendarGridTransitionCollectionViewFlowLayout.m; path = MBCalendarKit/CalendarKit/Core/CKCalendarGridTransitionCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		7CA3B44E05B7FDA2A78D81EC09960F09 /* VAWeekView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VAWeekView.swift; path = VACalendar/VAWeekView.swift; sourceTree = "<group>"; };
+		838206C3D92B7ADB171F193354023B57 /* CKCalendarEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CKCalendarEvent.m; path = MBCalendarKit/CalendarKit/Core/CKCalendarEvent.m; sourceTree = "<group>"; };
+		86D88A3122022D5D435F92E819151088 /* VACalendar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = VACalendar.modulemap; sourceTree = "<group>"; };
+		889F5E1EBCF76A839B7E78CEBCAFB9AA /* CKCalendarModel+HeaderViewSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CKCalendarModel+HeaderViewSupport.m"; path = "MBCalendarKit/CalendarKit/Core/CKCalendarModel+HeaderViewSupport.m"; sourceTree = "<group>"; };
+		892D8277D9F2CBDC071352854DD8D79D /* MBCalendarKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MBCalendarKit.modulemap; sourceTree = "<group>"; };
+		895D31EABBD62AFEABF1B851F579A1F9 /* CKCalendarModel+GridViewSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CKCalendarModel+GridViewSupport.m"; path = "MBCalendarKit/CalendarKit/Core/Model/CKCalendarModel+GridViewSupport.m"; sourceTree = "<group>"; };
+		8D7D788FB301AD88318EA8710E14AC27 /* CKCalendarCellContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKCalendarCellContext.h; path = MBCalendarKit/CalendarKit/Core/CKCalendarCellContext.h; sourceTree = "<group>"; };
+		90924795E16DAD332FBE60A87B099E90 /* CKCalendarHeaderColors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKCalendarHeaderColors.h; path = MBCalendarKit/CalendarKit/Headers/CKCalendarHeaderColors.h; sourceTree = "<group>"; };
+		925198F16946B2AF406A62E77B641ABD /* CKCalendarHeaderView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CKCalendarHeaderView.m; path = MBCalendarKit/CalendarKit/Core/CKCalendarHeaderView.m; sourceTree = "<group>"; };
+		95FD00D6DD3AE4CCA666901AACAF6B97 /* CKCalendarView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKCalendarView.h; path = MBCalendarKit/CalendarKit/Core/CKCalendarView.h; sourceTree = "<group>"; };
+		96D647068272D4FEC258AD09671FBCD1 /* VAMonth.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VAMonth.swift; path = VACalendar/VAMonth.swift; sourceTree = "<group>"; };
+		97002E73A63637C1ACE588C22A5DA144 /* CKCustomCellProviding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKCustomCellProviding.h; path = MBCalendarKit/CalendarKit/Core/CKCustomCellProviding.h; sourceTree = "<group>"; };
+		976DC34F4726B4BDD0B88455C63E97C1 /* CKCalendarView+CustomCells.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CKCalendarView+CustomCells.h"; path = "MBCalendarKit/CalendarKit/Core/CKCalendarView+CustomCells.h"; sourceTree = "<group>"; };
+		98840646476A37C620D79D1983CB20B6 /* MBPolygonView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MBPolygonView.m; path = MBCalendarKit/CalendarKit/Core/MBPolygonView.m; sourceTree = "<group>"; };
+		9BDD1DB3C77C5181260ABFA94EA24E70 /* CKCalendarModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKCalendarModel.h; path = MBCalendarKit/CalendarKit/Core/CKCalendarModel.h; sourceTree = "<group>"; };
+		9C6F76F80BB08972F4D3ACBC8A2F8CF1 /* Pods-CalProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CalProject.debug.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E83F5002EBBE26C55B5FB51D3CFBDE7 /* NSDate+Description.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+Description.m"; path = "MBCalendarKit/CalendarKit/Categories/Foundation/NSDate/NSDate+Description.m"; sourceTree = "<group>"; };
+		9F74D499781516BC4284F821924079F0 /* VAMonthView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VAMonthView.swift; path = VACalendar/VAMonthView.swift; sourceTree = "<group>"; };
+		A32D7601E3718DEE1217F9A67B8F7289 /* CKCalendarCellContext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CKCalendarCellContext.m; path = MBCalendarKit/CalendarKit/Core/CKCalendarCellContext.m; sourceTree = "<group>"; };
+		A941A15756044F88D5CDBE779C87DE32 /* CKCalendarView+CustomCells.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CKCalendarView+CustomCells.m"; path = "MBCalendarKit/CalendarKit/Core/CKCalendarView+CustomCells.m"; sourceTree = "<group>"; };
+		A98CED97B9474C1C35715E24602A1EA3 /* NSCalendar+DateManipulation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSCalendar+DateManipulation.h"; path = "MBCalendarKit/CalendarKit/Categories/Foundation/NSCalendar/NSCalendar+DateManipulation.h"; sourceTree = "<group>"; };
+		AB1A2DA9FE93CA65F49BBD901ABC17CD /* CKCalendarModel+GridViewSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CKCalendarModel+GridViewSupport.h"; path = "MBCalendarKit/CalendarKit/Core/Model/CKCalendarModel+GridViewSupport.h"; sourceTree = "<group>"; };
+		AC251BB8A24E475C934489048ABE35CB /* MBCalendarKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MBCalendarKit-Info.plist"; sourceTree = "<group>"; };
+		ADECFFD456ECB80FA1866484C65674F9 /* VACalendar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VACalendar-umbrella.h"; sourceTree = "<group>"; };
+		AE58F994463CC4F168BA8E186BD5ABF8 /* VACalendar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VACalendar.swift; path = VACalendar/VACalendar.swift; sourceTree = "<group>"; };
+		B17928C087DF2DE90ED4ED02BCB899BD /* VACalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = VACalendar.framework; path = VACalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B209B452979AC97946B74F66DE355659 /* CKCalendarDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKCalendarDelegate.h; path = MBCalendarKit/CalendarKit/Headers/CKCalendarDelegate.h; sourceTree = "<group>"; };
+		B2879D0C7FC1B68B611411A4B2395DF8 /* CKCalendarCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKCalendarCell.h; path = MBCalendarKit/CalendarKit/Core/CKCalendarCell.h; sourceTree = "<group>"; };
+		B431391E2FCAE573E115F74A0B4D059A /* NSCalendar+Components.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSCalendar+Components.m"; path = "MBCalendarKit/CalendarKit/Categories/Foundation/NSCalendar/NSCalendar+Components.m"; sourceTree = "<group>"; };
+		B4F7BD1DD9FDB6ECAA446F6AF4A55E10 /* CKCalendarGridTransitionDirection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKCalendarGridTransitionDirection.h; path = MBCalendarKit/CalendarKit/Core/CKCalendarGridTransitionDirection.h; sourceTree = "<group>"; };
+		B751C65AFAC4E81319A124317FA9E7B9 /* Pods-CalProject-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CalProject-Info.plist"; sourceTree = "<group>"; };
+		B8F68B77897715F9509099872C6DDA07 /* VADotView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VADotView.swift; path = VACalendar/VADotView.swift; sourceTree = "<group>"; };
+		BA8285BF59D5CB672103419B80E90F4B /* NSDate+Components.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+Components.h"; path = "MBCalendarKit/CalendarKit/Categories/Foundation/NSDate/NSDate+Components.h"; sourceTree = "<group>"; };
+		BC2BC67621B31CB7C46C9E9F345B15F8 /* CKCalendarGridTransitionAxis.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKCalendarGridTransitionAxis.h; path = MBCalendarKit/CalendarKit/Core/CKCalendarGridTransitionAxis.h; sourceTree = "<group>"; };
+		BC3C999E1B2EABF6E0E80F2ED21EE549 /* CKCalendarGridView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKCalendarGridView.h; path = MBCalendarKit/CalendarKit/Core/CKCalendarGridView.h; sourceTree = "<group>"; };
+		C229FA68AA6F5C8520AD539C6B828540 /* Pods-CalProject-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CalProject-umbrella.h"; sourceTree = "<group>"; };
+		C33A8AB5ABDCB364E437C03358586F87 /* Pods_CalProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CalProject.framework; path = "Pods-CalProject.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4205E8E52936C75107B554F986F55AE /* CKCalendarViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CKCalendarViewController.m; path = "MBCalendarKit/CalendarKit/View Controllers/CKCalendarViewController.m"; sourceTree = "<group>"; };
+		C4FAE7B380AC177AC94E3772BC6306C0 /* VACalendar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VACalendar.xcconfig; sourceTree = "<group>"; };
+		C5C3B79FA76A4D1F37219A2BE3AA2040 /* MBCalendarKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBCalendarKit-prefix.pch"; sourceTree = "<group>"; };
+		C5C90881D134A85F9D5B293D56740E6D /* NSCalendar+Ranges.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSCalendar+Ranges.h"; path = "MBCalendarKit/CalendarKit/Categories/Foundation/NSCalendar/NSCalendar+Ranges.h"; sourceTree = "<group>"; };
+		CB6193BDF9256B1B2DC71E7CF8BFFB3D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		CDB075C27369A289E52059DC13349FEA /* CKCalendarModel+GridViewAnimationSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CKCalendarModel+GridViewAnimationSupport.h"; path = "MBCalendarKit/CalendarKit/Core/CKCalendarModel+GridViewAnimationSupport.h"; sourceTree = "<group>"; };
+		CF89584FF4F7CF78A7CE56B12CDA3E1D /* CKCalendarGridView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CKCalendarGridView.m; path = MBCalendarKit/CalendarKit/Core/CKCalendarGridView.m; sourceTree = "<group>"; };
+		D0CA7EA65F48D748BC83ABCCC46F338C /* VAMonthHeaderView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VAMonthHeaderView.swift; path = VACalendar/VAMonthHeaderView.swift; sourceTree = "<group>"; };
+		D8F8E215CBD06DA6FC0C6F88BB55014C /* MBCalendarKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBCalendarKit.xcconfig; sourceTree = "<group>"; };
+		DAB93B76C613683A35EFE783A983FFEB /* CKCalendarHeaderViewDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKCalendarHeaderViewDataSource.h; path = MBCalendarKit/CalendarKit/Core/CKCalendarHeaderViewDataSource.h; sourceTree = "<group>"; };
+		DC264D57169F5A968E88F94997118F81 /* VACalendarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VACalendarView.swift; path = VACalendar/VACalendarView.swift; sourceTree = "<group>"; };
+		DCBD9E415FED55A622E4C8ADA39EDF04 /* Pods-CalProject.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CalProject.modulemap"; sourceTree = "<group>"; };
+		DD81BBA4B63437828D57E4F405392E61 /* Pods-CalProject-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CalProject-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DE99736E89438CBBF92542146A0DE291 /* NSCalendar+DateManipulation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSCalendar+DateManipulation.m"; path = "MBCalendarKit/CalendarKit/Categories/Foundation/NSCalendar/NSCalendar+DateManipulation.m"; sourceTree = "<group>"; };
+		E29A506893D17CB404173EDEE23E54DD /* VADayView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VADayView.swift; path = VACalendar/VADayView.swift; sourceTree = "<group>"; };
+		E433B3A522B3A157C0767D6F34BB771A /* NSCalendarCategories.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NSCalendarCategories.h; path = MBCalendarKit/CalendarKit/Categories/Foundation/NSCalendarCategories.h; sourceTree = "<group>"; };
+		E58285344651297E9A696918DDAE552A /* CKCalendarView+DefaultCellProviderImplementation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CKCalendarView+DefaultCellProviderImplementation.h"; path = "MBCalendarKit/CalendarKit/Core/CKCalendarView+DefaultCellProviderImplementation.h"; sourceTree = "<group>"; };
+		EAB9C88DBEEED61BA897C0947D7FB1E9 /* CKCalendarGridViewDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKCalendarGridViewDelegate.h; path = MBCalendarKit/CalendarKit/Core/CKCalendarGridViewDelegate.h; sourceTree = "<group>"; };
+		EB0F1732A2D4DBA41714F9E205837D34 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		EE98481E4295F53F3A72CBE71D4614AE /* CKTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CKTableViewCell.m; path = MBCalendarKit/CalendarKit/Core/CKTableViewCell.m; sourceTree = "<group>"; };
+		EF7ABF27B603A3B682E6B04A5E68FDD3 /* VACalendar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VACalendar-prefix.pch"; sourceTree = "<group>"; };
+		F540A6909973C4297F98F6F0E36F4C55 /* CKCalendarCellColors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKCalendarCellColors.h; path = MBCalendarKit/CalendarKit/Headers/CKCalendarCellColors.h; sourceTree = "<group>"; };
+		FC5627D2768676CA83CA3674EB3DBD74 /* CKCalendarHeaderViewDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKCalendarHeaderViewDelegate.h; path = MBCalendarKit/CalendarKit/Core/CKCalendarHeaderViewDelegate.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2E4A42F6B00AA9F50245FB8E4F240E46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F60518136C53E1B190150D6BED28E76 /* Foundation.framework in Frameworks */,
+				0E313ABE5D46BFD50098C9B86717046B /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6981DFD1643640A421BF41D1BEE41534 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12E53B58716CFF2F38E39BF96FD71910 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA4A64D4B4238C97FCE9F9ADA3D3F312 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8B8100BAC0B2051565261557562C311 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02EE8F4E865D560DA21666BE88BC7FF3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				892D8277D9F2CBDC071352854DD8D79D /* MBCalendarKit.modulemap */,
+				D8F8E215CBD06DA6FC0C6F88BB55014C /* MBCalendarKit.xcconfig */,
+				415DF3430132BCDB0AC8C716DEDE0737 /* MBCalendarKit-dummy.m */,
+				AC251BB8A24E475C934489048ABE35CB /* MBCalendarKit-Info.plist */,
+				C5C3B79FA76A4D1F37219A2BE3AA2040 /* MBCalendarKit-prefix.pch */,
+				2E4956C5AD4A70A448986D00F11FD793 /* MBCalendarKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MBCalendarKit";
+			sourceTree = "<group>";
+		};
+		1496F7B2D6136A64A20815AD3256831E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				86D88A3122022D5D435F92E819151088 /* VACalendar.modulemap */,
+				C4FAE7B380AC177AC94E3772BC6306C0 /* VACalendar.xcconfig */,
+				0318793CD6D25DB956FAF4D1E218F3B1 /* VACalendar-dummy.m */,
+				3FEC4FF6199B5A2AD0413148EC31FB59 /* VACalendar-Info.plist */,
+				EF7ABF27B603A3B682E6B04A5E68FDD3 /* VACalendar-prefix.pch */,
+				ADECFFD456ECB80FA1866484C65674F9 /* VACalendar-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/VACalendar";
+			sourceTree = "<group>";
+		};
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6C850C37433B9EAF70AA8EF4EC21FC43 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		46E98B86DEFD0426CA315DEBC26B59D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C7D121D7C84E75540F5819D5E30E056 /* MBCalendarKit.framework */,
+				C33A8AB5ABDCB364E437C03358586F87 /* Pods_CalProject.framework */,
+				B17928C087DF2DE90ED4ED02BCB899BD /* VACalendar.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5D9BCB4CFF462180CD1A88974464EE8E /* MBCalendarKit */ = {
+			isa = PBXGroup;
+			children = (
+				4187E899F4E8D08DA10DB100152276D3 /* CKCache.h */,
+				1008031B2A2624CBD8F83D67F9D360B0 /* CKCache.m */,
+				B2879D0C7FC1B68B611411A4B2395DF8 /* CKCalendarCell.h */,
+				2D147DE31F74106DE684145C891D3F1D /* CKCalendarCell.m */,
+				F540A6909973C4297F98F6F0E36F4C55 /* CKCalendarCellColors.h */,
+				8D7D788FB301AD88318EA8710E14AC27 /* CKCalendarCellContext.h */,
+				A32D7601E3718DEE1217F9A67B8F7289 /* CKCalendarCellContext.m */,
+				04EBDFC00560D7465718D62E067CCEA8 /* CKCalendarCellContextIdentifier.h */,
+				3DCA1C22F8ADBFC6A7B0058060379C25 /* CKCalendarDataSource.h */,
+				B209B452979AC97946B74F66DE355659 /* CKCalendarDelegate.h */,
+				3B5EFC2C4AE20B0EEA0637D001B49559 /* CKCalendarEvent.h */,
+				838206C3D92B7ADB171F193354023B57 /* CKCalendarEvent.m */,
+				BC2BC67621B31CB7C46C9E9F345B15F8 /* CKCalendarGridTransitionAxis.h */,
+				5BEBE96B4AC08B08AA5C6CBBC5F199A4 /* CKCalendarGridTransitionCollectionViewFlowLayout.h */,
+				77794E2B7EC5BD512743C4DC8D25F201 /* CKCalendarGridTransitionCollectionViewFlowLayout.m */,
+				B4F7BD1DD9FDB6ECAA446F6AF4A55E10 /* CKCalendarGridTransitionDirection.h */,
+				BC3C999E1B2EABF6E0E80F2ED21EE549 /* CKCalendarGridView.h */,
+				CF89584FF4F7CF78A7CE56B12CDA3E1D /* CKCalendarGridView.m */,
+				1EDA45CDD03BDC0785A10DF309F0AD51 /* CKCalendarGridViewDataSource.h */,
+				EAB9C88DBEEED61BA897C0947D7FB1E9 /* CKCalendarGridViewDelegate.h */,
+				90924795E16DAD332FBE60A87B099E90 /* CKCalendarHeaderColors.h */,
+				5D8657B6D2E89FA4223F41B8EE120F38 /* CKCalendarHeaderView.h */,
+				925198F16946B2AF406A62E77B641ABD /* CKCalendarHeaderView.m */,
+				DAB93B76C613683A35EFE783A983FFEB /* CKCalendarHeaderViewDataSource.h */,
+				FC5627D2768676CA83CA3674EB3DBD74 /* CKCalendarHeaderViewDelegate.h */,
+				9BDD1DB3C77C5181260ABFA94EA24E70 /* CKCalendarModel.h */,
+				5EE1F54C5F543664CB3084282067AACA /* CKCalendarModel.m */,
+				CDB075C27369A289E52059DC13349FEA /* CKCalendarModel+GridViewAnimationSupport.h */,
+				6CAA22915C686DD184239370FF25C3F5 /* CKCalendarModel+GridViewAnimationSupport.m */,
+				AB1A2DA9FE93CA65F49BBD901ABC17CD /* CKCalendarModel+GridViewSupport.h */,
+				895D31EABBD62AFEABF1B851F579A1F9 /* CKCalendarModel+GridViewSupport.m */,
+				32C47E0226F21AB27F82B607A27FBAF5 /* CKCalendarModel+HeaderViewSupport.h */,
+				889F5E1EBCF76A839B7E78CEBCAFB9AA /* CKCalendarModel+HeaderViewSupport.m */,
+				0C34EF93993AE43BDC3852AA982893DA /* CKCalendarModelObserver.h */,
+				95FD00D6DD3AE4CCA666901AACAF6B97 /* CKCalendarView.h */,
+				45187AE171EF76776BB29A08FA72BEEF /* CKCalendarView.m */,
+				976DC34F4726B4BDD0B88455C63E97C1 /* CKCalendarView+CustomCells.h */,
+				A941A15756044F88D5CDBE779C87DE32 /* CKCalendarView+CustomCells.m */,
+				E58285344651297E9A696918DDAE552A /* CKCalendarView+DefaultCellProviderImplementation.h */,
+				2FF69EA2E9D60472F47B90D4936612D8 /* CKCalendarView+DefaultCellProviderImplementation.m */,
+				1B70D5C7AE9AF8490556CFCE82528D38 /* CKCalendarViewController.h */,
+				C4205E8E52936C75107B554F986F55AE /* CKCalendarViewController.m */,
+				317EF2C1AEAF78D180259454167BE936 /* CKCalendarViewDisplayMode.h */,
+				97002E73A63637C1ACE588C22A5DA144 /* CKCustomCellProviding.h */,
+				557B5889F1B03DED7163649E6F140BA6 /* CKTableViewCell.h */,
+				EE98481E4295F53F3A72CBE71D4614AE /* CKTableViewCell.m */,
+				5B0DA6FF407945BEF363E281D07AF85C /* MBPolygonView.h */,
+				98840646476A37C620D79D1983CB20B6 /* MBPolygonView.m */,
+				113D0593D3FB35A2CDE6C8C87DC47B15 /* NSCalendar+Components.h */,
+				B431391E2FCAE573E115F74A0B4D059A /* NSCalendar+Components.m */,
+				A98CED97B9474C1C35715E24602A1EA3 /* NSCalendar+DateManipulation.h */,
+				DE99736E89438CBBF92542146A0DE291 /* NSCalendar+DateManipulation.m */,
+				382DD99C6C8308610F935541BCF8D56D /* NSCalendar+Juncture.h */,
+				5DDEAAF445A53ABC22437356D9AF7707 /* NSCalendar+Juncture.m */,
+				C5C90881D134A85F9D5B293D56740E6D /* NSCalendar+Ranges.h */,
+				54B3C70F52CC693B0EAE52155F6B9F3D /* NSCalendar+Ranges.m */,
+				E433B3A522B3A157C0767D6F34BB771A /* NSCalendarCategories.h */,
+				BA8285BF59D5CB672103419B80E90F4B /* NSDate+Components.h */,
+				3D4AB5B9B707844646A232C6D64B6C8A /* NSDate+Components.m */,
+				5FD79108E0755EC3C65162DC3A929C50 /* NSDate+Description.h */,
+				9E83F5002EBBE26C55B5FB51D3CFBDE7 /* NSDate+Description.m */,
+				2145D1C24C82D4D48C63633F864306D7 /* NSDateComponents+AllComponents.h */,
+				4A517ED53F114ECA0F2FE8F05BE81E01 /* NSDateComponents+AllComponents.m */,
+				02EE8F4E865D560DA21666BE88BC7FF3 /* Support Files */,
+			);
+			name = MBCalendarKit;
+			path = MBCalendarKit;
+			sourceTree = "<group>";
+		};
+		5E61773E4A49DB3EB6529A54F384E5FC /* Pods-CalProject */ = {
+			isa = PBXGroup;
+			children = (
+				DCBD9E415FED55A622E4C8ADA39EDF04 /* Pods-CalProject.modulemap */,
+				DD81BBA4B63437828D57E4F405392E61 /* Pods-CalProject-acknowledgements.markdown */,
+				4A83E40629DF5080955B9A84ECE39BC4 /* Pods-CalProject-acknowledgements.plist */,
+				523D49810AD353F0E758250FCEF62400 /* Pods-CalProject-dummy.m */,
+				1A07ABCD23FF889E33D2EC2CE0FA6D34 /* Pods-CalProject-frameworks.sh */,
+				B751C65AFAC4E81319A124317FA9E7B9 /* Pods-CalProject-Info.plist */,
+				C229FA68AA6F5C8520AD539C6B828540 /* Pods-CalProject-umbrella.h */,
+				9C6F76F80BB08972F4D3ACBC8A2F8CF1 /* Pods-CalProject.debug.xcconfig */,
+				2DF7B40D103B49E09BA63B67025F66D7 /* Pods-CalProject.release.xcconfig */,
+			);
+			name = "Pods-CalProject";
+			path = "Target Support Files/Pods-CalProject";
+			sourceTree = "<group>";
+		};
+		6C850C37433B9EAF70AA8EF4EC21FC43 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EB0F1732A2D4DBA41714F9E205837D34 /* Foundation.framework */,
+				CB6193BDF9256B1B2DC71E7CF8BFFB3D /* QuartzCore.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		9682627B11B6A163877BF5BDD6EDFF17 /* VACalendar */ = {
+			isa = PBXGroup;
+			children = (
+				AE58F994463CC4F168BA8E186BD5ABF8 /* VACalendar.swift */,
+				4C07DEE8EF9DC18C5BB766B7A7F7ED3B /* VACalendarMonthDelegate.swift */,
+				DC264D57169F5A968E88F94997118F81 /* VACalendarView.swift */,
+				2373F5FED1D025AFD7CBAA9DA515373E /* VADay.swift */,
+				E29A506893D17CB404173EDEE23E54DD /* VADayView.swift */,
+				B8F68B77897715F9509099872C6DDA07 /* VADotView.swift */,
+				27FEE67329960033B0CB5A837C64546A /* VAFormatters.swift */,
+				96D647068272D4FEC258AD09671FBCD1 /* VAMonth.swift */,
+				D0CA7EA65F48D748BC83ABCCC46F338C /* VAMonthHeaderView.swift */,
+				9F74D499781516BC4284F821924079F0 /* VAMonthView.swift */,
+				18145027E2D086E4ACC8A2770800E348 /* VAWeek.swift */,
+				6C6C45D5514874D6C5A351C59E527A0A /* VAWeekDaysView.swift */,
+				7CA3B44E05B7FDA2A78D81EC09960F09 /* VAWeekView.swift */,
+				1496F7B2D6136A64A20815AD3256831E /* Support Files */,
+			);
+			name = VACalendar;
+			path = VACalendar;
+			sourceTree = "<group>";
+		};
+		C7062C627900EF61F9C68277D24603AC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5D9BCB4CFF462180CD1A88974464EE8E /* MBCalendarKit */,
+				9682627B11B6A163877BF5BDD6EDFF17 /* VACalendar */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				C7062C627900EF61F9C68277D24603AC /* Pods */,
+				46E98B86DEFD0426CA315DEBC26B59D5 /* Products */,
+				F5EEE73CDE3908A96693EEB543CA91B2 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		F5EEE73CDE3908A96693EEB543CA91B2 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5E61773E4A49DB3EB6529A54F384E5FC /* Pods-CalProject */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7F10F92B3472F438A3D7F3A276B2DABB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37CBB699FED179B3E6B2188842E8495E /* Pods-CalProject-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C5B61C858921BFEACE062E9D14048DC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8949A44D013B028D02CD0DA2B6016FB9 /* VACalendar-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5672EBB5E5920F1AB4CC2138CC3C7BE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FAA9D29C1C601A7C9457D93B3D38094 /* CKCache.h in Headers */,
+				4858F03CED4417672ACA51C44925762F /* CKCalendarCell.h in Headers */,
+				0E2F5DF81E016AD4F16B84D937FAEE4B /* CKCalendarCellColors.h in Headers */,
+				63F466DF4BB1B52C4034F3EE7B113C72 /* CKCalendarCellContext.h in Headers */,
+				E2A956B19E12709C28688D2C8AD02015 /* CKCalendarCellContextIdentifier.h in Headers */,
+				66E7297F7CA23540741D5F784C88664B /* CKCalendarDataSource.h in Headers */,
+				8FB7B64AAE45357DF08C225C7464D87E /* CKCalendarDelegate.h in Headers */,
+				C3775B6BC2756D1678C1E485F835C660 /* CKCalendarEvent.h in Headers */,
+				FBB745786338EFF9860DFAF48E577896 /* CKCalendarGridTransitionAxis.h in Headers */,
+				3573849B1B17F75679397E29BC425E93 /* CKCalendarGridTransitionCollectionViewFlowLayout.h in Headers */,
+				0EEB2E61E5C8873A5240171FDD6064B0 /* CKCalendarGridTransitionDirection.h in Headers */,
+				A8E0B15BF29ADA01B78E9D710DAAAF29 /* CKCalendarGridView.h in Headers */,
+				672D6764918F2CF4730218525DE4303E /* CKCalendarGridViewDataSource.h in Headers */,
+				E8C72B863174C0018C4158D9A0240358 /* CKCalendarGridViewDelegate.h in Headers */,
+				79FBFDA06E17C34B3E3D374E8E9861A8 /* CKCalendarHeaderColors.h in Headers */,
+				129DF69F32FF8ED85CAB8C88B297F035 /* CKCalendarHeaderView.h in Headers */,
+				20C620FC5B4DF3026F53E138B011AAD1 /* CKCalendarHeaderViewDataSource.h in Headers */,
+				43BC5998D201C0881F995FC9E017C8F5 /* CKCalendarHeaderViewDelegate.h in Headers */,
+				30A786B0D648B3426B452044E312DB0E /* CKCalendarModel+GridViewAnimationSupport.h in Headers */,
+				3B547BDC19D66BC05BD327184B80289B /* CKCalendarModel+GridViewSupport.h in Headers */,
+				2275FDBC901C83D0B8A4072940D9A90D /* CKCalendarModel+HeaderViewSupport.h in Headers */,
+				90BE3633DAEB0040ED40DD21B6FD8A3D /* CKCalendarModel.h in Headers */,
+				590A1D330CCA6225FD4F7AD68716E495 /* CKCalendarModelObserver.h in Headers */,
+				3F32BB54AA75895EB77BB583AA47D958 /* CKCalendarView+CustomCells.h in Headers */,
+				5E9BBEBB0DA785919929096C08EFA2AD /* CKCalendarView+DefaultCellProviderImplementation.h in Headers */,
+				7040A87B5B00771F6F353406101C9315 /* CKCalendarView.h in Headers */,
+				2F875FA4C49B3C1E649ACE433D8273EF /* CKCalendarViewController.h in Headers */,
+				B04F8A9F18CE81353868069A635EF119 /* CKCalendarViewDisplayMode.h in Headers */,
+				453E13F8B6AE0317EFE07ABF3525D8EE /* CKCustomCellProviding.h in Headers */,
+				8C0749B6264A87266164B596430B5B4F /* CKTableViewCell.h in Headers */,
+				437D3E04FE6561E427D1ED0E41E3A8DA /* MBCalendarKit-umbrella.h in Headers */,
+				F3758189BDB96F03A2AFF5E50BEB5379 /* MBPolygonView.h in Headers */,
+				C072FE392D597E7BD912CBD6A8C8DA24 /* NSCalendar+Components.h in Headers */,
+				1EDC4F6FD03C3876FE8A0C14CF6BDC01 /* NSCalendar+DateManipulation.h in Headers */,
+				7FC5A6BED569774D3D7DACBA4826B61F /* NSCalendar+Juncture.h in Headers */,
+				6E25C9ADC270BAF5A30755ADF7CEFE4A /* NSCalendar+Ranges.h in Headers */,
+				604425BD95E1C75DFA6A41A9A8AF09F6 /* NSCalendarCategories.h in Headers */,
+				E465ADBEC52E3B3508BA5F9B4B2D646A /* NSDate+Components.h in Headers */,
+				FA2DF2AAA67797E9CE12420DFD19AFB5 /* NSDate+Description.h in Headers */,
+				7F2F9C7DA208499C95CD3974B214BDA5 /* NSDateComponents+AllComponents.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B2BCDE1AA5ED78F510AFAC36E56C000F /* MBCalendarKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C9F3D0CB662E2BBCEA5EC9B0D9C764B /* Build configuration list for PBXNativeTarget "MBCalendarKit" */;
+			buildPhases = (
+				F5672EBB5E5920F1AB4CC2138CC3C7BE /* Headers */,
+				FCE01D99C3E9742887CB60ED7FE1893A /* Sources */,
+				2E4A42F6B00AA9F50245FB8E4F240E46 /* Frameworks */,
+				BFDA8A1560A658A58761BBA2375D3467 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MBCalendarKit;
+			productName = MBCalendarKit;
+			productReference = 4C7D121D7C84E75540F5819D5E30E056 /* MBCalendarKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C4D52C72552DD3252CE27868011EE64E /* Pods-CalProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC2E1F8FE0355CD44EA05EC4B28969B8 /* Build configuration list for PBXNativeTarget "Pods-CalProject" */;
+			buildPhases = (
+				7F10F92B3472F438A3D7F3A276B2DABB /* Headers */,
+				7BC84437A5F3764F28EDDF0DAF2977F8 /* Sources */,
+				DA4A64D4B4238C97FCE9F9ADA3D3F312 /* Frameworks */,
+				0AEABE1C55F063C1737D44DD8EFA365F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4BDD41A525AA5B82CD9CF639C79BBA49 /* PBXTargetDependency */,
+				3796D3D1A8208DA7B06EAC79F01798C6 /* PBXTargetDependency */,
+			);
+			name = "Pods-CalProject";
+			productName = "Pods-CalProject";
+			productReference = C33A8AB5ABDCB364E437C03358586F87 /* Pods_CalProject.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F4765BD1456D3671888B43664CA753F7 /* VACalendar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37D20D9E36860CA1EF590898DA94E20B /* Build configuration list for PBXNativeTarget "VACalendar" */;
+			buildPhases = (
+				8C5B61C858921BFEACE062E9D14048DC /* Headers */,
+				56A7EBB96DB2B47ED7DBBB085912F0A6 /* Sources */,
+				6981DFD1643640A421BF41D1BEE41534 /* Frameworks */,
+				EB0A131698C2C68F46A916663D496C8B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VACalendar;
+			productName = VACalendar;
+			productReference = B17928C087DF2DE90ED4ED02BCB899BD /* VACalendar.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 46E98B86DEFD0426CA315DEBC26B59D5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B2BCDE1AA5ED78F510AFAC36E56C000F /* MBCalendarKit */,
+				C4D52C72552DD3252CE27868011EE64E /* Pods-CalProject */,
+				F4765BD1456D3671888B43664CA753F7 /* VACalendar */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0AEABE1C55F063C1737D44DD8EFA365F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFDA8A1560A658A58761BBA2375D3467 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB0A131698C2C68F46A916663D496C8B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		56A7EBB96DB2B47ED7DBBB085912F0A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2540C346CD514812FADE8180503BA914 /* VACalendar-dummy.m in Sources */,
+				0B4A14FF9E9AE6E53F32A84A8E131953 /* VACalendar.swift in Sources */,
+				0593BA5BFF92656C157C027E28B0DCDF /* VACalendarMonthDelegate.swift in Sources */,
+				67F82771A7DF7DFC02F23FDC12740C0C /* VACalendarView.swift in Sources */,
+				1AD3EA2AE21382CBEC993202FBE7C259 /* VADay.swift in Sources */,
+				ED277332B143A5DCF7222A57DF990B0F /* VADayView.swift in Sources */,
+				79B681C83B44BBA570FBF2D6D1847348 /* VADotView.swift in Sources */,
+				27134139D1FC00339CAB7947CAAEB3BC /* VAFormatters.swift in Sources */,
+				2520B6E2956DE515D80BEDE3C6AED720 /* VAMonth.swift in Sources */,
+				398AEF42B91ABF4E6131639BA8051E73 /* VAMonthHeaderView.swift in Sources */,
+				6EDDB7116CB5F9A1EA5579F196051E4B /* VAMonthView.swift in Sources */,
+				7BEE998F52ADF06E5E5F5B3677186AD8 /* VAWeek.swift in Sources */,
+				DA47ECFBEAE3FDF908C9951E459911ED /* VAWeekDaysView.swift in Sources */,
+				5ADFAC8DA1992D3F8EB3422E357E8554 /* VAWeekView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BC84437A5F3764F28EDDF0DAF2977F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B03A8353034AD183FB9B086917969241 /* Pods-CalProject-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCE01D99C3E9742887CB60ED7FE1893A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93A707E29F1DB74AD636CF7A18F9FC8D /* CKCache.m in Sources */,
+				B95410EF67E62581FC0DDF23ED23F07D /* CKCalendarCell.m in Sources */,
+				6D744E4889A0702A51334BC7A5AFF39A /* CKCalendarCellContext.m in Sources */,
+				F3FA64EAD5781A35865C3EE7CCAF0D15 /* CKCalendarEvent.m in Sources */,
+				720297E9CBC3766DE8294609AF32667B /* CKCalendarGridTransitionCollectionViewFlowLayout.m in Sources */,
+				985642ACDB36852768A541A74000BF25 /* CKCalendarGridView.m in Sources */,
+				F68B6A7DDB5E06D961064AF87D394095 /* CKCalendarHeaderView.m in Sources */,
+				8413994D27C1334EB5046B4BE695C275 /* CKCalendarModel+GridViewAnimationSupport.m in Sources */,
+				9E54470D7E1E934C0034B07312E235F3 /* CKCalendarModel+GridViewSupport.m in Sources */,
+				382B285642A2BAC65F2B3B97DD7FBB9B /* CKCalendarModel+HeaderViewSupport.m in Sources */,
+				3A99924EE3D7138BFE7826140316C071 /* CKCalendarModel.m in Sources */,
+				0DE5A1CE8D43508B18CD6BB7B4523563 /* CKCalendarView+CustomCells.m in Sources */,
+				13E661585BC66F0ACF970CDCE82DC353 /* CKCalendarView+DefaultCellProviderImplementation.m in Sources */,
+				99FE3DE82154FE3D71376EB4E002BA75 /* CKCalendarView.m in Sources */,
+				626A3132DD6A8EAA457953AA2CFF9DC2 /* CKCalendarViewController.m in Sources */,
+				2B109EAF908DE8F4345F2E52F26418F7 /* CKTableViewCell.m in Sources */,
+				7C37F11F2B86AB107F8ADC326931EB2F /* MBCalendarKit-dummy.m in Sources */,
+				3916A86BB1DD040F1682B475F2343D93 /* MBPolygonView.m in Sources */,
+				E57FC41855083D19794EABF2336672D3 /* NSCalendar+Components.m in Sources */,
+				8A20AE6649AC4F41A19053C710823DEE /* NSCalendar+DateManipulation.m in Sources */,
+				BD7B525A415D69770BC7507F54F484D6 /* NSCalendar+Juncture.m in Sources */,
+				D38C6E9A27543A3F332405323BB0EB6E /* NSCalendar+Ranges.m in Sources */,
+				AEDE40C7F225BFEF84F96B2EBF1C9AE7 /* NSDate+Components.m in Sources */,
+				D67EA98377606650A3AA236B0C21B700 /* NSDate+Description.m in Sources */,
+				21F559B0BA2B5CA1EEB98FF5539D0865 /* NSDateComponents+AllComponents.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3796D3D1A8208DA7B06EAC79F01798C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = VACalendar;
+			target = F4765BD1456D3671888B43664CA753F7 /* VACalendar */;
+			targetProxy = F44368D7B719987DCA56852BBAC1FADC /* PBXContainerItemProxy */;
+		};
+		4BDD41A525AA5B82CD9CF639C79BBA49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MBCalendarKit;
+			target = B2BCDE1AA5ED78F510AFAC36E56C000F /* MBCalendarKit */;
+			targetProxy = 735049F6AB7F781CBDA98056EA9FDE82 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0760FC64BC2F3E7A779FD4568FB90082 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8F8E215CBD06DA6FC0C6F88BB55014C /* MBCalendarKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MBCalendarKit/MBCalendarKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MBCalendarKit/MBCalendarKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MBCalendarKit/MBCalendarKit.modulemap";
+				PRODUCT_MODULE_NAME = MBCalendarKit;
+				PRODUCT_NAME = MBCalendarKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		196DFA3E4A09A28224918543529A1885 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		22665C9AD6931637F91E21A5E7178F64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C6F76F80BB08972F4D3ACBC8A2F8CF1 /* Pods-CalProject.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CalProject/Pods-CalProject-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CalProject/Pods-CalProject.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7CA2C88184C0CCE22E540915B286FE47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4FAE7B380AC177AC94E3772BC6306C0 /* VACalendar.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/VACalendar/VACalendar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/VACalendar/VACalendar-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/VACalendar/VACalendar.modulemap";
+				PRODUCT_MODULE_NAME = VACalendar;
+				PRODUCT_NAME = VACalendar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7FD49F631DC68A97504CE6579253D970 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8F8E215CBD06DA6FC0C6F88BB55014C /* MBCalendarKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MBCalendarKit/MBCalendarKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MBCalendarKit/MBCalendarKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MBCalendarKit/MBCalendarKit.modulemap";
+				PRODUCT_MODULE_NAME = MBCalendarKit;
+				PRODUCT_NAME = MBCalendarKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		96CF1485366F9E73C4978B3DE2139743 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4FAE7B380AC177AC94E3772BC6306C0 /* VACalendar.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/VACalendar/VACalendar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/VACalendar/VACalendar-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/VACalendar/VACalendar.modulemap";
+				PRODUCT_MODULE_NAME = VACalendar;
+				PRODUCT_NAME = VACalendar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B01D14FDC83DCF9D4BE53066BEA96D05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		D1E05E6078E8B8EA000F795F73EECA7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DF7B40D103B49E09BA63B67025F66D7 /* Pods-CalProject.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CalProject/Pods-CalProject-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CalProject/Pods-CalProject.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		37D20D9E36860CA1EF590898DA94E20B /* Build configuration list for PBXNativeTarget "VACalendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CA2C88184C0CCE22E540915B286FE47 /* Debug */,
+				96CF1485366F9E73C4978B3DE2139743 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				196DFA3E4A09A28224918543529A1885 /* Debug */,
+				B01D14FDC83DCF9D4BE53066BEA96D05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C9F3D0CB662E2BBCEA5EC9B0D9C764B /* Build configuration list for PBXNativeTarget "MBCalendarKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0760FC64BC2F3E7A779FD4568FB90082 /* Debug */,
+				7FD49F631DC68A97504CE6579253D970 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC2E1F8FE0355CD44EA05EC4B28969B8 /* Build configuration list for PBXNativeTarget "Pods-CalProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22665C9AD6931637F91E21A5E7178F64 /* Debug */,
+				D1E05E6078E8B8EA000F795F73EECA7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

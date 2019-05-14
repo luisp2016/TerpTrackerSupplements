@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SleepTracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XTE-B4-u4a">
+                                <rect key="frame" x="106" y="166" width="163" height="159"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pNc-Vr-WZE">
+                                <rect key="frame" x="53" y="658" width="39" height="30"/>
+                                <state key="normal" title="Sleep">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="start:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DMR-Iw-Evu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3OW-wC-aYy">
+                                <rect key="frame" x="277" y="658" width="49" height="30"/>
+                                <state key="normal" title="Awake">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="stop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hax-rv-Vpy"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sleep Tracker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0pj-C7-JLE">
+                                <rect key="frame" x="53" y="57" width="269" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="BHA-hW-cl9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="XTE-B4-u4a" firstAttribute="centerX" secondItem="0pj-C7-JLE" secondAttribute="centerX" id="1fo-QZ-jIs"/>
+                            <constraint firstItem="pNc-Vr-WZE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="53" id="HYr-2w-ehX"/>
+                            <constraint firstItem="XTE-B4-u4a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="106" id="HtQ-cz-PxG"/>
+                            <constraint firstItem="0pj-C7-JLE" firstAttribute="trailing" secondItem="3OW-wC-aYy" secondAttribute="trailing" constant="-4" id="JOs-kw-A3N"/>
+                            <constraint firstItem="pNc-Vr-WZE" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="0pj-C7-JLE" secondAttribute="leading" id="Jwc-SL-sDf"/>
+                            <constraint firstItem="0pj-C7-JLE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="13" id="LeU-gN-3Bi"/>
+                            <constraint firstItem="XTE-B4-u4a" firstAttribute="top" secondItem="0pj-C7-JLE" secondAttribute="bottom" constant="47" id="M0P-no-WCN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pNc-Vr-WZE" secondAttribute="bottom" constant="90" id="P2I-fX-VK2"/>
+                            <constraint firstItem="0pj-C7-JLE" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="RYE-JV-5B9"/>
+                            <constraint firstItem="3OW-wC-aYy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-98" id="alk-OI-dOb"/>
+                            <constraint firstItem="3OW-wC-aYy" firstAttribute="leading" secondItem="pNc-Vr-WZE" secondAttribute="trailing" constant="185" id="bLT-CZ-bfu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XTE-B4-u4a" secondAttribute="bottom" constant="453" id="fO0-fW-N34"/>
+                            <constraint firstItem="0pj-C7-JLE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ge2-O7-Icn"/>
+                            <constraint firstItem="pNc-Vr-WZE" firstAttribute="baseline" secondItem="3OW-wC-aYy" secondAttribute="baseline" id="sfc-Zs-0GI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="displayTimeLabel" destination="XTE-B4-u4a" id="gOQ-WO-hQX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.74384236453201"/>
+        </scene>
+    </scenes>
+</document>
